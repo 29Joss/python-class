@@ -1,11 +1,11 @@
 file = open('romeo.txt')
 
-
+list =[]
 for line in file:
-    uline = line.strip()
-    fline = uline.strip('\n')
-    list = fline.split()
-    print(list)
+    uline = line.split()
+    list.append(uline)
+print(list)
+
 
 while True:
     newdata = input('Enter your word')
