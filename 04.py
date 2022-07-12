@@ -4,17 +4,16 @@ file = open('romeo.txt')
 for line in file:
     uline = line.strip()
     fline = uline.strip('\n')
-    zline = fline.split()
-    print(zline)
+    list = fline.split()
+    print(list)
 
-
-for word in zline:
+while True:
     newdata = input('Enter your word')
-    if newdata is 'Done':
+    if newdata == 'Done':
         break
-    elif newdata is word:
+    elif newdata in list:
         continue
     else:
-        zline.append(newdata)
-        print(zline)
+        list.append(newdata)
+        print(list)
 print('End of the program')
