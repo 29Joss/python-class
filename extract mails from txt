@@ -1,0 +1,12 @@
+with open('missing.txt','r') as file:
+    x = 0
+    for line in file:
+        uline = ''
+        fline= ''
+        if line.startswith('From:'):
+            uline =line.split(':')
+            x = x + 1
+        else:
+            continue
+        print(uline[1])
+    print('There are', x, 'mails')
