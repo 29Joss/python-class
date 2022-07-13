@@ -1,0 +1,12 @@
+list=[]
+
+while True:
+    newdata = input('Enter your integrer number')
+    if newdata == 'Done':
+        break
+    elif newdata in list:
+        continue
+    else:
+        list.append(int(newdata))
+print(list,max(list),min(list))
+print('End of the program')
