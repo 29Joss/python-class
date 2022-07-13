@@ -1,11 +1,6 @@
-file = open('romeo.txt')
-
-list =[]
-for line in file:
-    uline = line.split()
-    list.append(uline)
-print(list)
-
+with open('romeo.txt','r') as file:
+    list =file.read().split()
+    print(list)
 
 while True:
     newdata = input('Enter your word')
